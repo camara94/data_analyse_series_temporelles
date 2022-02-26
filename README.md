@@ -57,3 +57,18 @@ Nous allons récupérer la référence de Microsoft sur le **site de yahoo finan
 	les_min = df_microsoft.High.resample('W').agg(['min'])
 </code>
 </pre>
+
+## Répresentation Personnalisée
+
+<pre>
+<code>
+	plt.figure(figsize=(16,6))
+	les_max['2018']['mean'].plot(c='green')
+	plt.fill_between(
+    		les_max['2018'].index,
+    		les_max['2018']['max'],
+    		les_min['2018']['min'],
+    		alpha=0.3
+	)
+</code>
+</pre>
