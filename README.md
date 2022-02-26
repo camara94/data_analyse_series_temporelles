@@ -112,7 +112,6 @@ Cette fonction permet de retourner la periode en français
         		p = 'Jour'
     		elif periode == 'W':
         		p = 'Semaine'
-        
     		return p
 </code>
 </pre>
