@@ -81,3 +81,17 @@ Nous allons récupérer la référence de Microsoft sur le **site de yahoo finan
 	price_min_from_2017_to_2022 = df_microsoft.Low.agg(['min'])
 </code>
 </pre>
+
+## Affichage du Prix Minimum et Maximum
+
+<pre>
+<code>
+	index_max = df_microsoft[df_microsoft['High'] == price_max_from_2017_to_2022['max']].index
+	index_min = df_microsoft[df_microsoft['Low'] == price_min_from_2017_to_2022['min']].index
+	plt.figure(figsize=(16, 8))
+	plt.plot(df_microsoft.index, df_microsoft.High, c='g')
+	plt.scatter(np.array([index_max]), price_max_from_2017_to_2022['max'], lw=13, c="b", label=f'Le {index_max[0].strftime("%d/%m%Y")}')
+	plt.scatter(np.array([index_min]), price_min_from_2017_to_2022['min'], lw=13, c="r" , label=f'Le {index_min[0].strftime("%d/%m/%Y")}')
+	plt.legend()
+</code>
+</pre>
