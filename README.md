@@ -95,3 +95,24 @@ Nous allons récupérer la référence de Microsoft sur le **site de yahoo finan
 	plt.legend()
 </code>
 </pre>
+
+## Définition d'une periode_fr
+
+Cette fonction permet de retourner la periode en français
+
+<pre>
+<code>
+	def periode_fr(periode):
+    		p = ''
+    		if periode == 'Q':
+        		p = 'Trimestre'
+    		elif periode == 'M':
+        		p = 'Mois'
+    		elif periode == 'D':
+        		p = 'Jour'
+    		elif periode == 'W':
+        		p = 'Semaine'
+        
+    		return p
+</code>
+</pre>
