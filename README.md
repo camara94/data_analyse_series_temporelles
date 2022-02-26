@@ -31,3 +31,11 @@ Dans ce tutoriel, nous allons répondre aux questions suivantes:
 Nous allons récupérer la référence de Microsoft sur le **site de yahoo finances** à travers ce lien ci-dessous:
 
 [microsoft share price](https://www.google.com/search?q=microsoft+share+price&rlz=1C1PNJJ_frTN929TN929&oq=microsoft+share&aqs=chrome.3.69i57j0i512l3j0i20i263i512j0i512l5.16901j0j4&sourceid=chrome&ie=UTF-8)
+
+## Créer le Dataset des Actions de microsoft
+
+<pre>
+<code>
+	df_microsoft = pdr.get_data_yahoo('MSFT')
+</code>
+</pre>
