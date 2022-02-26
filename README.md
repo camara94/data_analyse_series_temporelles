@@ -48,3 +48,12 @@ Nous allons récupérer la référence de Microsoft sur le **site de yahoo finan
 	plt.plot(df_microsoft.loc['2017','Close'])
 </code>
 </pre>
+
+## Quelques Aggrégations
+
+<pre>
+<code>
+	les_max = df_microsoft.High.resample('W').agg(['max', 'mean'])
+	les_min = df_microsoft.High.resample('W').agg(['min'])
+</code>
+</pre>
