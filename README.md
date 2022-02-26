@@ -116,3 +116,21 @@ Cette fonction permet de retourner la periode en français
     		return p
 </code>
 </pre>
+
+## Répresentation Personnalisée des Colonnes
+
+<pre>
+<code>
+	def graphiphique_perso(df_microsoft, periode, annee, col, fun_agg, c='g'):
+    		data = df_microsoft.resample(periode).agg(['max', 'mean', 'min']);
+    		plt.figure(figsize=(16, 5))
+    		plt.plot(data[annee][col][fun_agg], label=f'{fun_agg}', c=c)
+    		plt.fill_between(
+        		data[annee][col].index, 
+        		data[annee][col]['min'], 
+        		data[annee][col]['max'],
+        		alpha=0.3)
+    		plt.title(f'L\'analyse de la colonne {col} par {periode_fr(periode)}')
+    		plt.legend();
+</code>
+</pre>
