@@ -13,3 +13,15 @@ Dans ce tutoriel, nous allons répondre aux questions suivantes:
     !pip install pandas-datareader
 </code>
 </pre>
+
+## Importation des Package
+
+<pre>
+<code>
+	import pandas_datareader as pdr
+	import matplotlib.pyplot as plt
+	import numpy as np
+	plt.style.use('ggplot')
+	%matplotlib inline
+</code>
+</pre>
