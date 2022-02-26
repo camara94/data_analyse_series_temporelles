@@ -39,3 +39,12 @@ Nous allons récupérer la référence de Microsoft sur le **site de yahoo finan
 	df_microsoft = pdr.get_data_yahoo('MSFT')
 </code>
 </pre>
+
+## Répresantation de la Colonne Close
+
+<pre>
+<code>
+	plt.figure(figsize=(16,6))
+	plt.plot(df_microsoft.loc['2017','Close'])
+</code>
+</pre>
