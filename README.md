@@ -7,7 +7,7 @@ Dans ce tutoriel, nous allons répondre aux questions suivantes:
 4. Quelle est la **date du cours le plus bas** de l'action ?
 
 ## Installation
-Nous allons installer **pandas-reader** avec la commande ci-dessous:
+Nous allons installer **pandas-reader** avec la commande ci-dessous dans **jupyter notebook**:
 
 <pre>
 <code>
