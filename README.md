@@ -72,3 +72,12 @@ Nous allons récupérer la référence de Microsoft sur le **site de yahoo finan
 	)
 </code>
 </pre>
+
+## Les Prix Minimum et Maximum de 2017 à 2022
+
+<pre>
+<code>
+	price_max_from_2017_to_2022 = df_microsoft.High.agg(['max'])
+	price_min_from_2017_to_2022 = df_microsoft.Low.agg(['min'])
+</code>
+</pre>
